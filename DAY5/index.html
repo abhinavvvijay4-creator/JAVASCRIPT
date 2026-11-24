@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 id="head2" onmouseleave="leave()">Welcome to DOM Basics</h2>
+    <div id="grp1">
+
+
+    </div>
+    <div id="grp2">
+
+    </div>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <ul>
+        <li class="lichild">Apple</li>
+        <li class="lichild">Pear</li>
+        <li class="lichild">Orange</li>
+    </ul>
+    <form onsubmit="return validate()">
+        <label for="Email" required>Email</label></br>
+        <input type="email" name="" id="email" required></br>
+        <span id="error"></span></br>
+        <label for="password">Password</label></br>
+        <input type="password" name="" id="pwd" required ></br>
+        <button>Submit</button>
+    
+    </form>
+    <button onclick="show()">Click me</button>
+    <script src="event.js"></script>
+</body>
+</html>

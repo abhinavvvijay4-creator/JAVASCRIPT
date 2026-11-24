@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student REG Form</title>
+    <link rel="stylesheet" href="std.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form id="registrationForm"></form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span> 
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <span class="error " id="emailerror"></span>
+
+            <label for="Mobile Number">Mobile Number:</label>
+            <input type="text" id="mobile" placeholder="Enter 10 Digit mobile number">
+            <span class="error" id="mobileError"></span>
+
+            <label>Gender:</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <span class="error" id="genderError"></span>
+
+            <label for="course">Course Preference:</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Web Development">Web Development</option>
+                <option value="AI and Machine Learning">AI and Machine Learning</option>
+            </select>
+            <span class="error" id="courseError"></span>
+
+            <button type="submit" id="submitBtn">Register</button>
+            <button type="reset" id="clearBtn">Clear</button>
+
+            <p id="successMessage"></p>
+
+        </form>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
